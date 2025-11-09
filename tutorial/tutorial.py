@@ -1,6 +1,6 @@
 def tutorial_hitung_campuran():
     print("=" * 80)
-    print("  TUTORIAL: Operasi Hitung Campuran")
+    print("  TUTORIAL: Aritmatika Dasar")
     print("=" * 80)
     print("\nDalam operasi hitung campuran, urutan pengerjaan sangat penting.")
     print("Aturan yang harus diikuti adalah 'KuKaBaTaKu':")
@@ -30,9 +30,9 @@ def tutorial_hitung_campuran():
     print("\nHasil Akhir: 10")
     print("\n========================================")
 
-def tutorial_matematika_berpola():
+def tutorial_tekateki_gambar():
     print("=" * 80)
-    print("   TUTORIAL: Operasi Matematika Berpola")
+    print("   TUTORIAL: Teka Teki Gambar & Pola")
     print("=" * 80)
     print("\nSoal jenis ini meminta Anda menemukan pola atau aturan dari")
     print("serangkaian angka, gambar, atau operasi.")
@@ -99,3 +99,7 @@ def tutorial_barisan_deret():
     print("   Sn = a * (r^n - 1) / (r - 1)   (jika r > 1)")
     print("   Contoh: Jumlah 5 suku (S5) = 2 * (3^5 - 1) / (3 - 1) = 2 * (243 - 1) / 2 = 242")
     print("\n========================================")
+    
+tutorial_hitung_campuran()
+tutorial_tekateki_gambar()
+tutorial_barisan_deret()
