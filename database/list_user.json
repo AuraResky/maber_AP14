@@ -2,13 +2,13 @@
     "hambaallah": {
         "username": "hambaallah",
         "password": "$2b$12$6oHpF7dovQRV6IrmU.03BOb9V8yLGKIsSBgkh3rlKBRA1RGgv9YaC",
-        "total_level": 24,
-        "current_riddle_level": 8,
+        "total_level": 41,
+        "current_riddle_level": 1,
         "current_riddle_lives": 5,
-        "current_arithmetic_level": 9,
+        "current_arithmetic_level": 20,
         "current_arithmetic_lives": 5,
-        "current_sequence_level": 7,
+        "current_sequence_level": 20,
         "current_sequence_lives": 5,
-        "title": "Silver"
+        "title": "\u001b[96mDiamond\u001b[0m"
     }
 }

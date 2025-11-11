@@ -1,4 +1,5 @@
-from ui_utils import line, space, text_centered, info, success, EMOJI, emoji
+from ui_utils import EMOJI, emoji, info, line, space, success, text_centered
+
 
 def generate_question(level):
     questions = {
@@ -7,13 +8,13 @@ def generate_question(level):
             "solusi": "Alternatif Penyelesaian: 8 -> 10 (setiap angka bertambah 2)."},
         2: {"q": "Alternatif Penyelesaian: 3, 6, 9, 12, … berapa angka selanjutnya?",
             "a": 15,
-            "solusi": "Pola +3: 12 -> 15."},
+            "solusi": "Alternatif Penyelesaian: Pola +3: 12 -> 15."},
         3: {"q": "5, 10, 15, 20, … berapa angka ke-6?",
             "a": 30,
-            "solusi": "Alternatif Penyelesaian: Setiap kali tambah 5: 25 -> 30."},
+            "solusi": "Alternatif Penyelesaian: Setiap pola tambah 5: 25 -> 30."},
         4: {"q": "1, 2, 4, 8, 16, … berapa angka ke-7?",
             "a": 64,
-            "solusi": "Pola dikali 2: 32 -> 64."},
+            "solusi": "Pola dikali 2: 16 -> 32 -> 64 (angka ke-7)."},
         5: {"q": "10, 8, 3, 1, -4,... berapa angka selanjutnya?",
             "a": -6,
             "solusi": "Alternatif Penyelesaian: Selisih bergantian: -4 -> -6."},
@@ -26,9 +27,9 @@ def generate_question(level):
         8: {"q": "5, 10, c, 20, 25, ... berapa nilai c?",
             "a": 15,
             "solusi": "Alternatif Penyelesaian: Pola tambah 5: 10 -> 15 -> 20 -> 25."},
-        9: {"q": "4, 1, 2, -3, -6, -13 ... berapa angka selanjutnya?",
-            "a": -18,
-            "solusi": "Alternatif Penyelesaian: Selisih: -13 -> -18."},
+        9: {"q": "14, 7, 4, -3, -6, -13 ... berapa angka selanjutnya?",
+            "a": -16,
+            "solusi": "Alternatif Penyelesaian: Selisih: -7 lalu -3. Jadi hasilnya -16."},
        10: {"q": f'Bola ajaib menggandakan dirinya setiap menit.\n1 menit = 2{emoji("ball")}, 2 menit = 4{emoji("ball")}, 3 menit = 8{emoji("ball")}, 4 menit = 16{emoji("ball")}, 5 menit = 32{emoji("ball")}.\nBerapa {emoji("ball")} di menit ke-6?',
              "a": 64,
              "solusi": "Alternatif Penyelesaian: 32 -> 64 (setiap menit ×2)."},
@@ -46,20 +47,20 @@ def generate_question(level):
              "solusi": "Alternatif Penyelesaian: 9 -> 18 (pola ×2 lalu -1)."},
        15: {"q": f'2, 4, 8, 10, 20, 22, {emoji("panda")}..., berapa nilai {emoji("panda")}?', 
              "a": 44,
-             "solusi": "Alternatif Penyelesaian: 22 -> 44 (pola ×2)."},
+             "solusi": "Alternatif Penyelesaian: 22 -> 44 (pola +2 lalu ×2)."},
        16: {"q": f'1, 4, 2, 9, 3, 16, 4, {emoji("monkey")}..., berapa nilai {emoji("monkey")}?', 
              "a": 25,
-             "solusi": "Alternatif Penyelesaian: 4 -> 25 (pasangan (4,25))."},
-       17: {"q": "Sintara meminjam 2 buku lebih banyak setiap hari.\nHari 1:2, Hari 2:4, Hari 3:6 ... Berapa total buku selama 5 hari?",
+             "solusi": "Alternatif Penyelesaian: Angka biasa, lalu angka kuadrat, setelah 4 maka 5 kuadrat = 25 )."},
+       17: {"q": "Sintara meminjam 2 buku lebih banyak setiap hari.\nHari 1: 2 buku, Hari 2: 4 buku, Hari 3: 6 buku ... Berapa total  yang dipinjam selama 5 hari?",
              "a": 30,
              "solusi": "Alternatif Penyelesaian: 2 -> 4 -> 6 -> 8 -> 10 = 30."},
        18: {"q": "Setiap hari, Sintara menjual 2× lebih banyak roti lalu +1 bonus. Hari ke-1:2 roti. Berapa di hari ke-4?",
              "a": 23,
              "solusi": "Alternatif Penyelesaian: 2 -> 5 -> 11 -> 23."},
-       19: {"q": "Toko beli kain 2,6,10,14,18 m. Baju jadi 5,8,13,16,21. Jika tren konstan, berapa baju hari ke-6?",
+       19: {"q": "Toko beli kain 2 m, 6 m, 10 m, 14 m, 18 m. Baju akan jadi 5, 8, 13, 16, 21. Jika tren konstan, berapa baju jadi pada hari ke-6?",
              "a": 24,
-             "solusi": "Alternatif Penyelesaian: 21 -> 24."},
-       20: {"q": f"Atlet lari 2,4,12,14,42,44 km selama 6 hari. Pola berulang, berapa jarak hari ke-7?",
+             "solusi": "Alternatif Penyelesaian: Fokus pada baju yang akan jadi (Pola +3 lalu +5, maka 21 -> 24)."},
+       20: {"q": f"Atlet lari 2 km, 4 km, 12 km, 14 km, 42 km, 44 km selama 6 hari. Jika tren konstan, berapa jarak lari Atlet pada hari ke-7?",
              "a": 132,
              "solusi": "Alternatif Penyelesaian: 44 -> 132 (pola ×3 lalu +2)."}
     }
